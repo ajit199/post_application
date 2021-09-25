@@ -13,8 +13,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label>Description</label>
-                    <textarea name="desc" class="form-control">{{$post->description}}</textarea>
+                    <label>Summary</label>
+                    <textarea name="summary" class="form-control">{{$post->summary}}</textarea>
                        
                     
                 </div>

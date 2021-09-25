@@ -8,18 +8,18 @@
                 @csrf
                 <div class="form-group">
                     <label for="">Name</label> 
-                    <input type="text" class="form-control"  name="name" required minlength="5" maxlength="12">
+                    <input type="text" class="form-control"  name="name" required minlength="5">
                 </div>
 
                 <div class="form-group">
                     <label for="">Email</label>
-                    <input type="email" class="form-control" name="email" required minlength="8" maxlength="15">
+                    <input type="email" class="form-control" name="email" required minlength="8">
                    
                 </div>
 
                 <div class="form-group">
                     <label for="">Password</label>
-                    <input type="password" class="form-control" name="password" required minlength="5" maxlength="8">
+                    <input type="password" class="form-control" name="password" required minlength="5">
                 </div>
 
                 <div class="text-right">

@@ -21,9 +21,6 @@
                     <input type="submit" class="btn btn-success" value="Login" name="submit">
                 </div>
             </form>
-            @error('email')
-           {{$message}}
-        @enderror
         </div>
     </div>
 </div>
