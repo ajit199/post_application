@@ -26,7 +26,7 @@ public function editPost($id)
   {
     $post = Post::findOrFail($request->id);
     $post->title = $request->title;
-    $post->description = $request->desc;
+    $post->summary = $request->summary;
     $post->save();
     return redirect('/');
   }
@@ -43,7 +43,7 @@ public function editPost($id)
     $post = new Post;
     $post->title = $request->title;
     $post->user_id = $request->user_id;
-    $post->description = $request->desc;
+    $post->summary = $request->desc;
     $post->save();
     return redirect('/');
   }
@@ -51,6 +51,7 @@ public function editPost($id)
   public function postDetail($id)
   {
    $post = Post::with('comments.user')->findOrFail($id);
+
    return view('postDetail',['post'=>$post]);
 
   }

@@ -7,7 +7,7 @@
                     <h5 class="card-header"></h5>
                     <div class="card-body">
                         <h4 class="card-title"><b>{{ $post->title }}</b></h4>
-                        <p class="card-text">{{ $post->description }}</p>
+                        <p class="card-text">{{ $post->summary }}</p>
                         <a href="/" class="btn btn-primary">Back</a>
                     </div>
                     @if (session()->has('loggedInUser'))
